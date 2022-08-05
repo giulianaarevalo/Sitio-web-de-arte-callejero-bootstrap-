@@ -1,0 +1,150 @@
+header{
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista1{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: larger;
+    color: white;
+    
+}
+
+.lista-link{
+    padding: 10px;
+    transition: all 1s ;
+}
+
+.lista-link:hover{
+    background-color: darkmagenta;
+}
+
+.logo{
+    width: 170px;
+    height: 100px;
+}
+
+.probandogrid{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    
+
+    width: 100%;
+    height: 600px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "nav main aside "
+    "nav main aside "
+    "footer footer footer "
+    ;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+}
+
+.item1{
+    grid-area: header;
+    
+    font-size:larger;
+    background: linear-gradient(90deg, rgba(53,0,68,1) 0%, 
+    rgba(121,9,96,1) 69%, rgba(198,49,200,1) 100%);
+    
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.item6 {
+    grid-area: section;
+    background-color: brown;
+
+    display: flex;
+    
+}
+
+
+.item2{
+    grid-area: nav;
+    background-color: red;
+    
+    display: flex;
+    align-content: center;
+}
+
+.primerfoto{
+    width: 100%;
+    height: 100%;
+}
+
+.item3{
+    grid-area: main;
+    background-color: blueviolet;
+}
+
+.segundafoto{
+    width: 100%;
+    height: 100%;
+}
+
+.item4{
+    grid-area: aside;
+    background-color: green;
+}
+
+.tercerfoto{
+    width: 100%;
+    height: 100%;
+}
+
+.item5{
+    background-color: yellow;
+    grid-area:footer;
+}
+
+@media (max-width: 768px){
+    .probandogrid {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        text-transform: uppercase;
+    
+        width: 90%;
+        height: 600px;
+        margin: 10px auto;
+        border: 1px solid black;
+    
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "header"
+        "section"
+        "nav"
+        "main"
+        "aside"
+        "footer"
+        ;}
+
+
+}
+
+a{
+    color: white;
+}
+
+.imagenes1{
+    width: 200px;
+    
+}
+
+
